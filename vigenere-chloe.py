@@ -3,15 +3,12 @@
 #
 
 # alphabet est la liste qui contient notre alphabet
-alphabet=["A", "B","C", "D", "E", "F"]
+alphabet=["A", "B","C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
 
 # Table est la table de Vigenere
 table=[]
 
 
-def chloplus(premiernombre, deuxiemenombre) :
-    resultat = premiernombre + deuxiemenombre +1
-    return resultat
 
 
 # decale une liste d'éléments d'alphabet d'un élément vers la droite
@@ -25,20 +22,32 @@ def decale(alpha):
 def creeTableVigenere():
     longueur=len(alphabet)
     print("longeur de l'alphabet : {}".format(longueur))
+    nouvelAlphabet = alphabet
 
     for ligne in range(longueur):
-        print("nous sommes dans le tour de boucle n°{}".format(ligne))
-        table.append(alphabet)
-        print(table)
-        print(" ")
+        table.append(nouvelAlphabet)
+        nouvelAlphabet=decale(nouvelAlphabet)
 
     print("Resultat : ")
     print("Voici la table de Vigenere : ")
     print(table)
-    decale(alphabet)
     
-    age=10
-    if age <10
-    print("vient jouer avec nous!")
-    else:
-    print("Tu es trop vieux!"
+# renvoie la colonne numero col de la table de Vigenere
+def donneColonne(col):
+    colonne=[]
+    for l in table:
+        colonne.append(l[0])
+    return colonne
+
+
+def code(texte,cle):
+
+    secret=""
+
+    for lettre in texte:
+        print("codage de la lettre: {}".format(lettre))
+        ligne=0
+        colonne=0
+        secret=secret+table[ligne][colone]
+
+    return secret
