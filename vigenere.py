@@ -7,7 +7,6 @@ alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N"
 table = []
 
 
-
 # decale une liste d'éléments d'alphabet d'un élément vers la droite
 def decale(alpha):
     alphaGauche = alpha[:-1]
