@@ -48,6 +48,6 @@ def code(texte,cle):
         print("codage de la lettre: {}".format(lettre))
         ligne=0
         colonne=0
-        secret=secret+table[ligne][colone]
+        secret=secret+table[ligne][colonne]
 
     return secret
